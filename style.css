@@ -1,0 +1,300 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@200;300;400;500&family=Instrument+Sans:wght@400;500&display=swap');
+
+:root {
+  --green: #2E3A26;
+  --green-hover: #3A4A30;
+  --ochre: #A07737;
+  --ochre-hover: #8A6530;
+  --sage: #7A8C76;
+  --cta-bg: #C6D2D7;
+  --card-bg: #FBF9F5;
+  --text-dark: #1A1A1A;
+  --text-body: #4A453E;
+  --text-body-alt: #3E3A34;
+  --text-label: #4E5A4B;
+  --cta-heading: #4A3C29;
+  --footer-body: #C8C3BA;
+  --footer-heading: #F3F0EA;
+  --dot: #6B655C;
+  --dark-brown: #332114;
+  --input-border: rgba(25, 19, 11, 0.28);
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: 'Instrument Sans', sans-serif;
+  color: var(--text-body);
+  background: var(--card-bg);
+}
+
+h1, h2, h3, .eyebrow, .label {
+  font-family: 'Jost', sans-serif;
+}
+
+a { text-decoration: none; }
+
+.section {
+  border: 1px solid var(--green);
+}
+
+/* ---------- HERO ---------- */
+.hero {
+  position: relative;
+}
+.hero img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 1440 / 860;
+  object-fit: cover;
+  object-position: center 55%;
+}
+
+/* ---------- WHAT YOU'LL GET ---------- */
+.section-pad {
+  padding: 96px 120px;
+}
+.eyebrow {
+  font-size: 13px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--text-label);
+  margin-bottom: 12px;
+}
+.section h2 {
+  font-weight: 300;
+  font-size: 40px;
+  line-height: 1.15;
+  color: var(--text-dark);
+  margin: 0 0 44px 0;
+  max-width: 640px;
+}
+.card-grid {
+  display: flex;
+  gap: 28px;
+}
+.card-grid > * { flex: 1; }
+.guide-card {
+  background: var(--card-bg);
+  border: 1px solid var(--ochre);
+  border-radius: 6px;
+  padding: 36px 32px 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+.tick {
+  width: 28px;
+  height: 2px;
+  background: var(--sage);
+}
+.card-num {
+  font-size: 13px;
+  color: var(--text-label);
+}
+.guide-card h3 {
+  font-weight: 400;
+  font-size: 25px;
+  color: var(--text-dark);
+  margin: 0;
+}
+.guide-card p {
+  font-size: 16px;
+  color: var(--text-body);
+  margin: 0;
+}
+
+/* ---------- EMAIL CAPTURE ---------- */
+.capture {
+  background: var(--cta-bg);
+  text-align: center;
+  padding: 96px 120px;
+}
+.capture-inner {
+  max-width: 660px;
+  margin: 0 auto;
+}
+.capture h2 {
+  font-weight: 300;
+  font-size: 46px;
+  color: var(--cta-heading);
+  margin: 0 0 16px 0;
+}
+.capture > .capture-inner > p {
+  font-size: 17px;
+  color: var(--text-body-alt);
+  margin: 0 0 32px 0;
+}
+.field-label {
+  font-size: 12px;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--cta-heading);
+  text-align: left;
+  margin-bottom: 8px;
+}
+.form-row {
+  display: flex;
+  gap: 12px;
+  align-items: stretch;
+}
+.form-row input[type="email"] {
+  flex: 1;
+  background: #fff;
+  border: 1px solid var(--input-border);
+  border-radius: 6px;
+  padding: 17px;
+  font-size: 16px;
+  font-family: 'Instrument Sans', sans-serif;
+  color: var(--text-dark);
+}
+.btn-ochre {
+  background: var(--ochre);
+  border: 1px solid var(--green);
+  border-radius: 6px;
+  color: #F3F0EA;
+  font-family: 'Jost', sans-serif;
+  font-weight: 500;
+  font-size: 15px;
+  padding: 17px 34px;
+  cursor: pointer;
+  white-space: nowrap;
+}
+.btn-ochre:hover { background: var(--ochre-hover); }
+.consent {
+  display: flex;
+  gap: 8px;
+  align-items: flex-start;
+  text-align: left;
+  font-size: 13px;
+  color: var(--text-body-alt);
+  margin-top: 16px;
+}
+.fine-print {
+  font-size: 11px;
+  color: var(--text-body-alt);
+  opacity: 0.7;
+  text-align: left;
+  margin-top: 8px;
+}
+
+/* ---------- FOOTER ---------- */
+.footer {
+  background: var(--dark-brown);
+  padding: 48px 40px;
+  text-align: center;
+}
+.footer-copy {
+  font-size: 14px;
+  color: var(--footer-body);
+  max-width: 700px;
+  margin: 0 auto 32px auto;
+}
+.footer-logos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 64px;
+  flex-wrap: wrap;
+}
+.footer-logos a { opacity: 0.92; transition: opacity 0.15s; }
+.footer-logos a:hover { opacity: 1; }
+.footer-logos img { display: block; }
+.logo-hf, .logo-rai { height: 34px; }
+.logo-miso { height: 38px; }
+.dot { width: 4px; height: 4px; background: var(--dot); border-radius: 50%; }
+
+/* ---------- THANK YOU PAGE ---------- */
+.topbar {
+  background: var(--dark-brown);
+  text-align: center;
+  padding: 22px 24px;
+}
+.topbar span {
+  font-family: 'Jost', sans-serif;
+  font-weight: 200;
+  font-size: 19px;
+  letter-spacing: 0.34em;
+  color: var(--footer-heading);
+}
+.thankyou-content {
+  padding: 96px 120px 88px;
+  background: #E6E2DB;
+}
+.thankyou-content h1 {
+  font-weight: 300;
+  font-size: 56px;
+  color: var(--text-dark);
+  margin: 0 0 16px 0;
+}
+.thankyou-content > .sub {
+  font-size: 18px;
+  color: var(--text-body-alt);
+  margin: 0 0 48px 0;
+}
+.download-card {
+  background: var(--card-bg);
+  border: 1px solid var(--ochre);
+  border-radius: 6px;
+  padding: 36px 32px 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.download-card .biz-label {
+  font-family: 'Jost', sans-serif;
+  font-weight: 500;
+  font-size: 13px;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--text-label);
+}
+.download-card h3 {
+  font-weight: 400;
+  font-size: 27px;
+  color: var(--text-dark);
+  margin: 0;
+}
+.download-card p {
+  font-size: 16px;
+  color: var(--text-body);
+  margin: 0;
+}
+.btn-download {
+  margin-top: auto;
+  display: block;
+  text-align: center;
+  background: var(--green);
+  color: var(--footer-heading);
+  border: 1px solid var(--ochre);
+  border-radius: 6px;
+  padding: 16px 20px;
+  font-family: 'Jost', sans-serif;
+  font-weight: 500;
+  font-size: 15px;
+  letter-spacing: 0.04em;
+}
+.btn-download:hover { background: var(--green-hover); color: #fff; }
+.closing-line {
+  font-size: 16px;
+  color: var(--text-body-alt);
+  margin-top: 48px;
+  max-width: 640px;
+}
+
+/* ---------- RESPONSIVE ---------- */
+@media (max-width: 760px) {
+  .section-pad, .capture, .thankyou-content { padding: 40px 24px; }
+  .card-grid { flex-direction: column; gap: 16px; }
+  .section h2 { font-size: 30px; }
+  .capture h2 { font-size: 32px; }
+  .form-row { flex-direction: column; }
+  .btn-ochre { width: 100%; padding: 18px 20px; }
+  .thankyou-content h1 { font-size: 34px; }
+  .guide-card, .download-card { padding: 26px 24px; }
+  .guide-card h3 { font-size: 21px; }
+  .download-card h3 { font-size: 22px; }
+  .footer-logos { gap: 28px; }
+  .footer-logos .dot { display: none; }
+}
