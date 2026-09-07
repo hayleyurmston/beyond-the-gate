@@ -297,4 +297,6 @@ a { text-decoration: none; }
   .download-card h3 { font-size: 22px; }
   .footer-logos { gap: 28px; }
   .footer-logos .dot { display: none; }
-}
+.logo-hf { height: 27px; }
+.logo-rai { height: 24px; }
+.logo-miso { height: 39px; }
