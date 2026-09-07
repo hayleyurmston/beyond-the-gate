@@ -201,8 +201,8 @@ a { text-decoration: none; }
 .footer-logos a { opacity: 0.92; transition: opacity 0.15s; }
 .footer-logos a:hover { opacity: 1; }
 .footer-logos img { display: block; }
-.logo-hf, .logo-rai { height: 34px; }
-.logo-miso { height: 38px; }
+.logo-hf, .logo-rai { height: 37px; }
+.logo-miso { height: 53px; }
 .dot { width: 4px; height: 4px; background: var(--dot); border-radius: 50%; }
 
 /* ---------- THANK YOU PAGE ---------- */
