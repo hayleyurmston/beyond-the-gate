@@ -429,7 +429,8 @@ a { text-decoration: none; }
   flex-direction: column;
 }
 .proof-image {
-  aspect-ratio: 4 / 3;
+  aspect-ratio: 1 / 1;
+  flex-shrink: 0;
   background: repeating-linear-gradient(45deg, #EFEAE0, #EFEAE0 12px, #E6DFD1 12px, #E6DFD1 24px);
   display: flex;
   align-items: center;
