@@ -158,6 +158,20 @@ a { text-decoration: none; }
   padding-bottom: 2px;
 }
 .link-arrow:hover { color: var(--ochre); }
+.btn-blue {
+  background: var(--cta-bg);
+  border: 1px solid var(--green);
+  border-radius: 999px;
+  color: var(--green);
+  font-family: 'Jost', sans-serif;
+  font-weight: 500;
+  font-size: 15px;
+  padding: 17px 34px;
+  cursor: pointer;
+  white-space: nowrap;
+  display: inline-block;
+}
+.btn-blue:hover { background: #B4C1C7; }
 
 /* ---------- EMAIL CAPTURE / CTA BLOCKS ---------- */
 .capture {
@@ -470,7 +484,7 @@ a { text-decoration: none; }
   .section h2 { font-size: 30px; }
   .capture h2 { font-size: 32px; }
   .form-row { flex-direction: column; }
-  .btn-ochre { width: 100%; padding: 18px 20px; }
+  .btn-ochre, .btn-blue { width: 100%; padding: 18px 20px; }
   .thankyou-content h1 { font-size: 34px; }
   .guide-card, .download-card { padding: 26px 24px; }
   .guide-card h3 { font-size: 21px; }
