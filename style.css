@@ -51,7 +51,7 @@ a { text-decoration: none; }
   object-position: center 55%;
 }
 
-/* ---------- WHAT YOU'LL GET ---------- */
+/* ---------- WHAT YOU'LL GET / CARD SECTIONS ---------- */
 .section-pad {
   padding: 96px 120px;
 }
@@ -104,8 +104,62 @@ a { text-decoration: none; }
   color: var(--text-body);
   margin: 0;
 }
+.specialist-card h3 { font-size: 20px; margin-bottom: 6px; }
+.specialist-card .sub {
+  font-family: 'Jost', sans-serif;
+  font-size: 13px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--ochre);
+  margin: -4px 0 10px 0;
+  display: block;
+}
 
-/* ---------- EMAIL CAPTURE ---------- */
+/* ---------- HOMEPAGE HERO COPY ---------- */
+.hero-copy {
+  text-align: center;
+}
+.hero-copy .eyebrow { justify-content: center; display: flex; }
+.hero-copy h1 {
+  font-weight: 300;
+  font-size: 48px;
+  line-height: 1.15;
+  color: var(--text-dark);
+  max-width: 760px;
+  margin: 0 auto 14px auto;
+}
+.hero-copy .subhead {
+  font-family: 'Jost', sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  color: var(--cta-heading);
+  margin: 0 0 20px 0;
+}
+.hero-copy .body-text {
+  font-size: 17px;
+  line-height: 1.6;
+  color: var(--text-body);
+  max-width: 620px;
+  margin: 0 auto 36px auto;
+}
+.hero-cta-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 28px;
+  flex-wrap: wrap;
+}
+.link-arrow {
+  font-family: 'Jost', sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  color: var(--cta-heading);
+  border-bottom: 1px solid var(--sage);
+  padding-bottom: 2px;
+}
+.link-arrow:hover { color: var(--ochre); }
+
+/* ---------- EMAIL CAPTURE / CTA BLOCKS ---------- */
 .capture {
   background: var(--cta-bg);
   text-align: center;
@@ -206,7 +260,7 @@ a { text-decoration: none; }
 .logo-miso { height: 66px; }
 .dot { width: 4px; height: 4px; background: var(--dot); border-radius: 50%; }
 
-/* ---------- THANK YOU PAGE ---------- */
+/* ---------- TOPBAR / THANK YOU PAGE ---------- */
 .topbar {
   background: var(--dark-brown);
   text-align: center;
@@ -284,6 +338,131 @@ a { text-decoration: none; }
   max-width: 100%;
 }
 
+.back-link {
+  display: block;
+  text-align: center;
+  font-size: 13px;
+  color: var(--text-label);
+  padding: 18px 0;
+  background: var(--card-bg);
+}
+
+/* ---------- MINI NAV ---------- */
+.mini-nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 36px;
+  flex-wrap: wrap;
+  padding: 18px 24px;
+  background: var(--card-bg);
+}
+.mini-nav a {
+  font-family: 'Jost', sans-serif;
+  font-size: 13px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--text-label);
+}
+.mini-nav a:hover { color: var(--ochre); }
+
+/* ---------- WORKSHOPS & SPEAKING ---------- */
+.workshop-lede {
+  font-size: 17px;
+  color: var(--text-body-alt);
+  max-width: 640px;
+  margin: -24px 0 44px 0;
+}
+.chip-group { margin-bottom: 40px; }
+.chip-group:last-child { margin-bottom: 0; }
+.chip-group h3 {
+  font-family: 'Jost', sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--cta-heading);
+  margin: 0 0 18px 0;
+}
+.chip-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+.chip {
+  display: inline-block;
+  background: var(--card-bg);
+  border: 1px solid var(--sage);
+  border-radius: 999px;
+  padding: 10px 20px;
+  font-size: 14px;
+  color: var(--text-body);
+}
+.workshop-note {
+  font-size: 15px;
+  color: var(--text-body-alt);
+  max-width: 640px;
+  margin: 40px 0 0 0;
+}
+
+/* ---------- PROOF / WHERE WE'VE BEEN ---------- */
+.proof-card {
+  background: var(--card-bg);
+  border: 1px solid var(--ochre);
+  border-radius: 6px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+.proof-image {
+  aspect-ratio: 4 / 3;
+  background: repeating-linear-gradient(45deg, #EFEAE0, #EFEAE0 12px, #E6DFD1 12px, #E6DFD1 24px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 16px;
+}
+.proof-image span {
+  font-size: 12px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--text-label);
+}
+.proof-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 25%;
+  display: block;
+}
+.proof-body {
+  padding: 28px 28px 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  flex: 1;
+}
+.proof-body .biz-label {
+  font-family: 'Jost', sans-serif;
+  font-weight: 500;
+  font-size: 13px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--text-label);
+}
+.proof-body h3 {
+  font-weight: 400;
+  font-size: 22px;
+  color: var(--text-dark);
+  margin: 0;
+}
+.proof-body p {
+  font-size: 15px;
+  color: var(--text-body);
+  margin: 0;
+}
+
 /* ---------- RESPONSIVE ---------- */
 @media (max-width: 760px) {
   .section-pad, .capture, .thankyou-content { padding: 40px 24px; }
@@ -301,13 +480,9 @@ a { text-decoration: none; }
   .logo-hf { height: 27px; }
   .logo-rai { height: 24px; }
   .logo-miso { height: 48px; }
-}
-
-.back-link {
-  display: block;
-  text-align: center;
-  font-size: 13px;
-  color: var(--text-label);
-  padding: 18px 0;
-  background: var(--card-bg);
+  .mini-nav { gap: 18px 22px; }
+  .workshop-lede { margin-top: 0; }
+  .hero-copy h1 { font-size: 30px; }
+  .hero-copy .subhead { font-size: 17px; }
+  .hero-copy .body-text { font-size: 16px; }
 }
